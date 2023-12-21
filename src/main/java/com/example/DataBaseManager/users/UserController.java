@@ -30,4 +30,9 @@ public class UserController {
         userService.insertUser(dataModel);
     }
 
+    @DeleteMapping(path = "delete/{userIdToDelete}")
+    void deleteUser(@PathVariable("userIdToDelete") Long id){
+        userService.deleteUserById(id);
+    }
+
 }

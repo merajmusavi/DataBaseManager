@@ -30,4 +30,8 @@ public class UserService {
         userRepository.save(dataModel);
     }
 
+    void deleteUserById(Long id){
+        userRepository.deleteById(id);
+    }
+
 }

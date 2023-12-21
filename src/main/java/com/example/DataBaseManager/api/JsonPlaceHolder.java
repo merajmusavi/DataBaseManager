@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(value = "jsonPlaceHolder", url = "http://185.238.2.38:6992/api/1703156665JFMDQCKL9EAIYX0")
+@FeignClient(value = "jsonPlaceHolder", url = "http://ip:port/api/{token}")
 public interface JsonPlaceHolder
 {
     @GetMapping("/listuser")

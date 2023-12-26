@@ -14,9 +14,9 @@ public class JavaPlaceHolderRunner {
 
 
             System.out.println("size of posts:");
-            List<Users> posts = jsonPlaceHolder.posts();
+            List<Users> posts = jsonPlaceHolder.users();
 
-            System.out.println(jsonPlaceHolder.posts().toString());
+            System.out.println(jsonPlaceHolder.users().toString());
 
 
         }

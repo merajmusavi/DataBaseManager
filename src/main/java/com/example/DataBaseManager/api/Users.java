@@ -299,4 +299,7 @@ public class Users {
             this.updated_at = updated_at;
         }
     }
+
+
 }
+

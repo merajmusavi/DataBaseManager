@@ -60,7 +60,7 @@ public class UserService {
 
     Optional<User> speceficuserselectionDataDTO(String username) throws URISyntaxException, IOException, InterruptedException {
         HttpRequest httpRequest = HttpRequest.newBuilder()
-                .uri(new URI("http://185.238.2.38:6992/api/1703156665JFMDQCKL9EAIYX0/user/"+username))
+                .uri(new URI("http://185.238.2.38:6992/api/{token}/user/"+username))
                 .build();
         HttpResponse<String> httpResponse = HttpClient.newHttpClient()
                 .send(httpRequest,HttpResponse.BodyHandlers.ofString());
